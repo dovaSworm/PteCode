@@ -44,7 +44,7 @@ a:hover {
 }
 
 .container {
-    padding: 0;
+    /* padding: 0; */
 }
 
 .backlight {
@@ -104,10 +104,6 @@ nav.navbar {
     color: green;
 }
 
-span.navbar-toggler-icon {
-    margin-left: -15px;
-}
-
 #triangle-up {
     z-index: 10000;
     width: 0;
@@ -131,11 +127,13 @@ button:focus {
 }
 
 .navbar-toggler {
+    margin-right: 15px;
     padding: 0!important;
 }
 
 .navbar-light .navbar-toggler-icon {
-    margin-top: 12px;
+    height: 40px;
+    width: 40px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(37,158,41, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -146,9 +144,6 @@ button:focus {
     cursor: pointer;
 }
 
-span.navbar-toggler-icon {
-    color: red;
-}
 
 .navbar-brand {
     padding: 0 !important;
@@ -249,7 +244,8 @@ ul.dropdown-menu.dropleft {
 
 #hero {
     /* background: url(../img/crbi-pcb.png); */
-    background: url(../img/white1.jpg) repeat;
+    /* background: url(../img/white1.jpg) repeat; */
+    /* margin-bottom: 6%; */
     width: 100%;
     margin-top: 65px;
 }
@@ -279,7 +275,9 @@ div.carousel-item,
 div.carousel-item div>img {
     height: 100%;
 }
-
+.carusel-container {
+    /* height: 45vh; */
+}
 #hero img {
     height: 100%;
 }
@@ -317,9 +315,10 @@ a.carousel-control-next {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
-section.bg-img1::after {
+section.bg-img1::after, div.bg-img1::after {
     content: "";
     display: block;
     width: 100%;
@@ -369,16 +368,16 @@ section {
     position: relative;
 }
 
-.maindiv {
-    position: relative;
-    padding: 15px;
-    margin: auto;
+.main-div {
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 #main {
+    /* margin-top: 65px; */
     position: relative;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    /* padding-top: 40px;
+    padding-bottom: 20px; */
     width: 100%;
 }
 
@@ -416,15 +415,15 @@ section {
     text-align: center;
 }
 
-.maindiv div.backlight {
+/* .maindiv div.backlight {
     margin-top: 10px;
     margin-bottom: 20px;
-}
+} */
 
-div.row.mt-5 {
+/* div.row.mt-5 {
     padding-top: 10px;
     background: white;
-}
+} */
 
 
 /* div.m-1 {
@@ -494,9 +493,10 @@ div.row.mt-5 {
 /* ABOUT ---------------------------------------------------------------------------------------------------------*/
 
 #about {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 }
 
 .about-card {
@@ -530,6 +530,9 @@ div.row.mt-5 {
 
 /* PARTNERI -------------------------------------------------------------------------------------------------------*/
 
+#partneri {
+    margin: 40px 0;
+}
 div.row.no-gutters.myshadow {
     position: relative;
     z-index: 555;
@@ -563,10 +566,8 @@ div.row.no-gutters.myshadow {
 /* FOOTER -------------------------------------------------------------------------------------------------------*/
 
 #contact {
-    padding: 15px;
-    padding-top: 25px;
+    padding:25px 15px;
     width: 100%;
-    margin-top: 40px;
     color: white;
 }
 
@@ -605,21 +606,23 @@ address {
 }
 
 #donji {
-    box-shadow: 0 0 8px 2px rgba(16, 37, 68, 0.72);
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+    padding-top: 80px;
 }
 
 #donji div.row.flex-column {
-    border-top: 2px solid green;
-    height: 125px;
+    /* border-top: 2px solid green; */
+    /* height: 125px; */
     background: rgba(10, 17, 27, 1);
     width: 100%;
 }
 
-div#donji::after {
+/* div#donji::after {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
+    background: rgba(8, 8, 8, 0.80);
     background: rgba(8, 8, 8, 0.95);
     position: absolute;
     top: 0;
@@ -627,7 +630,7 @@ div#donji::after {
     right: 0;
     bottom: 0;
     z-index: 1;
-}
+} */
 
 footer>*,
 div#donji>* {
@@ -647,7 +650,7 @@ div#donji ul.nav a {
 }
 
 #donji img {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 180px;
 }
 
@@ -663,8 +666,9 @@ footer div.d-block i {
 }
 
 #prava {
+    text-align: center;
     font-size: 10px;
-    margin-top: 15px;
+    margin: 10px 0;
 }
 
 
@@ -681,7 +685,7 @@ div.offset-md-1.backlight {
 }
 
 .product-card-big {
-    margin: 30px 0;
+    margin: 10px 0;
     border-bottom: 1px dotted gray;
     border-top: 1px dotted gray;
     padding: 10px;
@@ -722,7 +726,8 @@ ul {
 }
 
 .product-card-small {
-    padding: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
 .product-card-small img {
@@ -740,7 +745,7 @@ ul {
 }
 
 .product-card-small p {
-    margin: 10px 0;
+    margin: 15px 0 10px 0;
 }
 
 .product-card-small div.d-flex {
@@ -752,18 +757,21 @@ ul {
     content: "★";
     padding-right: 8px;
 }
+/* .product-card-big img {
+    box-shadow: 0 10px 11px -5px rgba(0, 0, 0, .6);
+} */
 
-.product-card-small.backlight,
-.product-card-big img {
+.product-card-small.backlight{
     border-radius: 2px;
-    box-shadow: 2px 0 18px 1px rgba(100, 100, 100, .2);
+    box-shadow: 5px 4px 27px -6px rgba(100, 100, 100, .2);
+    /* box-shadow: 2px 0 18px 1px rgba(100, 100, 100, .2); */
 }
 
 .breadcrumb {
     background-color: transparent;
     padding: 3px;
     font-size: 12px;
-    margin-bottom: 0;
+    margin: 4px 0 8px 0;
 }
 
 .breadcrumb li {
@@ -799,6 +807,11 @@ a.pagination-links,
     background: #27272eb8;
     color: white;
     /* border: 1px solid #ccc; */
+}
+
+.info{
+    background-color: rgba(32, 40, 51, .65);
+    padding: 5px 10px;
 }
 
 
@@ -881,19 +894,28 @@ a.pagination-links,
         height: 200px;
     }
     body {
-        font-size: 12px;
+        font-size: 11px;
     }
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.45rem;
     }
     h3 {
-        font-size: 1.35rem;
+        font-size: 1.15rem;
     }
     .navbar a img {
         height: 41px;
     }
     #carouselExampleIndicators {
         height: 22vh;
+    }
+    .main-div {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    #navbarSupportedContent>ul>li {
+        padding: 2px 2px;
+        margin: 3px 20px;
+        list-style: none;
     }
     #hero {
         margin-top: 43px;
@@ -907,7 +929,8 @@ a.pagination-links,
         width: unset;
     }
     #about {
-        padding: 20px;
+        padding: 40px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
     }
     .about-icon {
         margin-top: 0;
@@ -920,6 +943,10 @@ a.pagination-links,
     }
     .about-card:last-of-type {
         margin-bottom: 0!important;
+    }
+    #donji {
+        padding-top: 30px;
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
     }
     .owl-carousel img {
         width: 110px;
@@ -941,8 +968,8 @@ a.pagination-links,
         height: 200px;
     }
     #main {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
     }
     .product-card,
     .about-card {
@@ -961,7 +988,7 @@ a.pagination-links,
     }
     #naslov p {
         padding-top: 1.4rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     div.cookieinfo {
         width: 100%;

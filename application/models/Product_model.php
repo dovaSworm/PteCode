@@ -78,6 +78,7 @@ class Product_model extends CI_Model
             'subcategory' => $this->input->post('podkategorija'),
             'url' => $this->input->post('url'),
             'product_image' => $product_image,
+            'sizes' => $this->input->post('velicine'),
             'preporucujemo' => !empty($this->input->post('preporucujemo')) ? 1 : 0,
         );
         return $this->db->insert('product', $data);
@@ -109,6 +110,7 @@ class Product_model extends CI_Model
                 'subcategory' => $this->input->post('podkategorija'),
                 'url' => $this->input->post('url'),
                 'preporucujemo' => !empty($this->input->post('preporucujemo')) ? 1 : 0,
+                'sizes' => $this->input->post('velicine'),
             );
         }
         else{
@@ -121,6 +123,7 @@ class Product_model extends CI_Model
                 'karakteristike' => $this->input->post('karakteristike'),
                 'opis' => $this->input->post('opis'),
                 'product_image' => $product_image,
+                'sizes' => $this->input->post('velicine'),
                 'subcategory' => $this->input->post('podkategorija'),
                 'url' => $this->input->post('url'),
                 'preporucujemo' => !empty($this->input->post('preporucujemo')) ? 1 : 0,

@@ -1,8 +1,8 @@
 <?php $title = "Pro-technology Electronics sistemi za PCB montažu,lemilice,antistaički"; ?>
 
 <!-- Hero section -->
-<section class="backlight" id="hero">
-    <div class="container">
+<section class="" id="hero">
+    <div class="container p-0 backlight carusel-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

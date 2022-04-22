@@ -89,7 +89,7 @@ $(function() {
         }
     });
 
-
+    
     console.log(document.title);
 
     // EFFECTS navbar    --------------------------------------------------------------------

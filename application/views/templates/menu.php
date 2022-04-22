@@ -1,11 +1,11 @@
 <main>
     <section id="main">
-        <div class="container">
-            <div class="maindiv">
-                <h1 class="text-center"><b>PRO-TECHNOLOGY Electronics</b><br>Lemilice, sistemi za SMD montažu, video
+        <div class="container backlight main-div">
+            <!-- <div class="maindiv"> -->
+                <h1 class="text-center glavni-naslov">Lemilice, sistemi za SMD montažu, video
                     mikroskopi, ESD antistatički program, roboti</h1>
-                <div class="row mt-5">
-                    <div class="main-menu flex-column d-flex justify-content-start col-12 col-lg-4">
+                <div class="row mt-3 mt-lg-5 no-gutters">
+                    <div class="main-menu flex-column d-flex justify-content-start col-12 col-lg-4 pr-lg-3">
                         <h3>&nbspKategorije</h3>
                         <ul id="menu-ul">
                             <li><span></span>

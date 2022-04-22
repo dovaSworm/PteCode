@@ -32,14 +32,14 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top d-block">
 
 
-            <div class="container">
+            <div class="container p-0">
 
                 <div id="logo">
                     <a class="navbar-brand" href="<?php echo base_url();?>"><img
                             src="<?php echo base_url(); ?>assets/img/prologo.png" alt="Pro-technology"></a>
                     <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:063/810-1242">&nbsp;063/810-1242</a>
                 </div>
-                <button id="triangle-up" class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

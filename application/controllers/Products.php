@@ -82,7 +82,7 @@ class Products extends CI_Controller
     public function create()
     {
         $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistaički.';
-        $data['title'] = "create product";
+        $data['title'] = "Unesi novi proizvod";
 
         $data['categories'] = $this->product_model->get_categories();
 
@@ -98,7 +98,7 @@ class Products extends CI_Controller
         } else {
             //upload image
             $config['upload_path'] = './assets/img/productimg';
-            $config['allowed_types'] = 'gif|jpg|png|PNG';
+            $config['allowed_types'] = 'gif|jpg|png|PNG|JPG|GIF';
             $config['max_size'] = '2048';
             $config['max_width'] = '700';
             $config['max_height'] = '700';
