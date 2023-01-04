@@ -37,7 +37,7 @@ class Products extends CI_Controller
 // init pagination
         
 
-        $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistaički.';
+        $naslov['title'] = 'Sistemi za PCB montažu,lemilice, antistatik, video mikroskopi, roboti';
         if (isset($_GET['category_id'])) {
             $data['products'] = $this->product_model->get_product_by_category($_GET['category_id']);
             if (empty($data['products'])) {
@@ -65,7 +65,7 @@ class Products extends CI_Controller
 
     public function view($slug = null)
     {
-        $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistaički.';
+        $naslov['title'] = 'Sistemi za PCB montažu,lemilice, antistatik, video mikroskopi, roboti';
         $data['product'] = $this->product_model->get_products($slug);
 
         if (empty($data['product'])) {
@@ -76,12 +76,13 @@ class Products extends CI_Controller
         $this->load->view('templates/header', $naslov);
         $this->load->view('templates/menu');
         $this->load->view('products/view', $data);
+        $this->load->view('templates/partneri');
         $this->load->view('templates/footer');
     }
 
     public function create()
     {
-        $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistaički.';
+        $naslov['title'] = 'Sistemi za PCB montažu,lemilice, antistatik, video mikroskopi, roboti';
         $data['title'] = "Unesi novi proizvod";
 
         $data['categories'] = $this->product_model->get_categories();

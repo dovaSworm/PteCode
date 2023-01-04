@@ -1,5 +1,5 @@
-<br><br><br><br>
 
+<div class="container backlight edit bigshadow">
 <?php echo form_open('users/login'); ?>
 <div class="row no-gutters">
     <div class="col-md-4 offset-md-4">
@@ -14,6 +14,6 @@
         </div>
     </div>
 </div>
-
+</div>
 
 <?php echo form_close(); ?>

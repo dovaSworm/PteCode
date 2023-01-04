@@ -1,4 +1,4 @@
-<div class="col-lg-8 col-md-10 offset-md-1 offset-lg-0 backlight">
+<div class="col">
 
     <?php
     $kategorija_id = $product['categories_id'];
@@ -112,19 +112,16 @@
             break;
     }
 
-    echo '<ul class="breadcrumb"><li><a href="' . base_url() . 'products">Proizvodi</a></li>';
-    echo '<li>></li>';
+    echo '<ul class="breadcrumb pcbig"><li><a href="' . base_url() . 'products">Proizvodi</a></li>';
     echo '<li><a href="' . base_url() . 'products/?category_id=' . $kategorija_id . '">' . $kategorija . '</a></li>';
-    echo '<li>></li>';
     echo '<li><a href="' . base_url() . 'products/?subcategory=' . $product['subcategory'] . '">' . $podkategorija . '</a></li>';
-    echo '<li>></li>';
     echo '<li><a href="' . base_url() . 'products/' . $product['slug'] . '">' . $product['title'] . '</a></li>';
     echo '</ul>';
 
     ?>
 
     <div class="product-card-big">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between align-items-baseline">
             <h4><b><?php echo $product['title'] ?></b></h4>
             <h6><small><i>Proizvodjač:</i></small> <b><?php echo $product['proizvodjac'] ?></b></h6>
         </div>
@@ -145,7 +142,7 @@
             ?>
             <div class="mb-3">
                 <div class="row justify-content-center">
-                    <div class="col-4 bg-light" >Šifra</div>
+                    <div class="col-4 bg-light">Šifra</div>
                     <div class="col-4 text-right bg-light">Veličina</div>
                 </div>
                 <?php foreach ($velicine_niz as $string) : ?>
@@ -175,8 +172,4 @@
     </div>
 
 </div>
-</div>
-</div>
-<!-- container end x-->
-</section>
-</main>
+</div><!-- KRAJ main-div -->

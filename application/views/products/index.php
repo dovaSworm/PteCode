@@ -1,6 +1,6 @@
-<div class="col-lg-8 col-md-10 offset-md-1 offset-lg-0">
-    <h3 class="text-center">Proizvodi</h3>
-    <div>
+<div class="col-lg-8 offset-lg-0">
+    <!-- <h3 class="text-center">Proizvodi</h3> -->
+
         <?php if (!isset($_GET['category_id'])) {
             $kategorija_id = $products[0]['categories_id'];
             $kategorija = '';
@@ -121,14 +121,11 @@
             }
 
             echo '<ul class="breadcrumb"><li><a href="' . base_url() . 'products">Proizvodi</a></li>';
-            echo '<li>></li>';
             echo '<li><a href="' . base_url() . 'products/?category_id=' . $products[0]['categories_id'] . '">' . $kategorija . '</a></li>';
-            echo '<li>></li>';
             echo '<li><a href="' . base_url() . 'products/?subcategory=' . $_GET['subcategory'] . '">' . $podkategorija . '</a></li>';
             echo '</ul>';
         } elseif (!isset($_GET['subcategory']) && isset($_GET['category_id'])) {
             echo '<ul class="breadcrumb"><li><a href="' . base_url() . 'products">Proizvodi</a></li>';
-            echo '<li>></li>';
             echo '<li><a href="' . base_url() . 'products/?category_id=' . $kategorija_id . '">' . $kategorija . '</a></li>';
             echo '</ul>';
         } else {
@@ -139,7 +136,6 @@
             echo '</ul>';
         }
         ?>
-
         <!-- <h2 class="text-center">Naši proizvodi</h2> -->
         <?php foreach ($products as $product) : ?>
             <div class="product-card-small backlight">
@@ -192,10 +188,4 @@
             <?php echo $this->pagination->create_links(); ?>
         </div>
     </div>
-
 </div>
-<!-- </div> -->
-</div>
-<!-- container end -->
-</section>
-</main>

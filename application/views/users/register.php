@@ -1,5 +1,5 @@
-<br><br><br><br>
-<h2><?= $title ?></h2>
+<div class="container backlight edit bigshadow">
+<h2 class="text-center"><?= $title ?></h2>
 <?php echo validation_errors(); ?>
 <?php $user = $this->session->userdata('user_id'); 
     if($user != 3){
@@ -10,7 +10,7 @@
 <?php echo form_open('users/register'); ?>
 
 <div class="form-group">
-    <label>IMe</label>
+    <label>Ime</label>
     <input type="text" name="name" class="form-control" placeholder="Unesit ime">
 </div>
 <div class="form-group">
@@ -31,3 +31,4 @@
 </div>
 <button class="btn btn-primary" type="submit">Submit</button>
 <?php echo form_close(); ?>
+</div>

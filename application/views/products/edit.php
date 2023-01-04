@@ -1,7 +1,5 @@
-<br><br><br><br><br>
-<h2 class="text-center"><?= $title ?></h2>
-
-<div class="container">
+<div class="container edit backlight bigshadow">
+    <h2 class="text-center"><?= $title ?></h2>
     <?php echo validation_errors(); ?>
     <?php echo form_open_multipart('products/update'); ?>
     <input type="hidden" name="id" value="<?php echo $product['id']; ?>">

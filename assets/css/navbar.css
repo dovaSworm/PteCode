@@ -1,0 +1,259 @@
+.navbar {
+  display: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(79, 173, 206, 0.92);
+  transition: all 0.9s;
+  height: 6vh;
+  /* color: white; */
+  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.66) 0px 7px 2px -7px, rgba(9, 5, 43, 0.59) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px -1px 6px 4px;
+}
+@media (min-width: 1219px) {
+  .navbar {
+    height: 7vh;
+  }
+}
+.navbar img {
+  height: 100%;
+  margin-right: 3px;
+}
+.navbar .navbar-brand {
+  padding: 0 !important;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 376px) {
+  .navbar .navbar-brand {
+    margin-right: 0;
+  }
+}
+.navbar .navbar-toggler {
+  margin-right: 15px;
+  margin-left: auto;
+  padding: 0 !important;
+  font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-toggler {
+    margin-right: 5px;
+  }
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83, 15, 234)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar button:focus {
+  outline: none !important;
+}
+.navbar .title-phone {
+  color: white;
+}
+@media (max-width: 767px) {
+  .navbar .title-phone #hide-phone {
+    font-size: 10px;
+  }
+}
+.navbar .title-phone h3 {
+  font-family: "Play";
+  font-style: italic;
+  color: rgb(188, 230, 244);
+  margin: auto;
+  margin-left: 0;
+}
+@media (max-width: 375px) {
+  .navbar .title-phone h3 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 376px) {
+  .navbar .title-phone h3 {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .title-phone h3 {
+    font-size: 1.7rem;
+  }
+}
+
+#logo {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  #logo h2 {
+    font-size: 1.2rem;
+  }
+}
+#logo h1 {
+  font-size: 16px;
+}
+#logo p {
+  padding-left: 8px;
+  font-size: 14px;
+}
+@media (min-width: 1281px) {
+  #logo p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  #logo p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  #logo p {
+    font-size: 10px;
+  }
+}
+#logo p:last-of-type {
+  font-size: 12px;
+}
+@media (min-width: 1281px) {
+  #logo p:last-of-type {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #logo p:last-of-type {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  #logo p:last-of-type {
+    font-size: 8px;
+  }
+}
+
+.navbar-collapse {
+  margin-top: -1px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    width: 40%;
+    background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+    border-radius: 0 0 12px 10px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 766px) {
+  .navbar-nav {
+    width: 60%;
+  }
+}
+.navbar-nav .aktivna {
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 0px 2px, rgba(9, 5, 43, 0.14) 0px 3px 9px -3px, rgba(9, 5, 43, 0.43) 0px -2px 0px inset !important;
+  background: rgba(236, 243, 251, 0.9490196078) !important;
+  color: #09052b !important;
+}
+@media (max-width: 992px) {
+  .navbar-nav .aktivna {
+    border-radius: 3px;
+  }
+}
+.navbar-nav li.nav-item {
+  text-align: center;
+  font-family: "Play";
+  margin: 5px;
+  border-radius: 4px;
+  width: 100px;
+  background: #3184cf;
+  color: white;
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.66) 0px 7px 12px -3px, rgba(9, 5, 43, 0.59) 0px -3px 0px inset;
+}
+.navbar-nav li.nav-item:hover {
+  background: rgba(236, 243, 251, 0.9490196078) !important;
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 0px 2px, rgba(9, 5, 43, 0.14) 0px 3px 9px -3px, rgba(9, 5, 43, 0.43) 0px -2px 0px inset;
+  color: #09052b;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .navbar-nav li.nav-item:last-of-type {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav li.nav-item {
+    padding: 2px 2px;
+    margin: 3px 20px;
+    list-style: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav li.nav-item {
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.logoparaph {
+  margin-bottom: 0;
+  font-style: italic;
+  font-family: "Neutrons";
+  text-transform: uppercase;
+  color: #dbebf7;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2.4px;
+  text-shadow: -4px 3px 0 rgba(9, 90, 150, 0.7882352941), -2px 1px 0 rgba(9, 90, 150, 0.7882352941), -4px 2px 0 rgba(9, 90, 150, 0.7882352941), 0 0 10px #ffffff;
+}
+
+.nav-holder {
+  position: relative;
+}
+
+.dropdown-menu {
+  cursor: pointer;
+  position: absolute;
+  left: auto;
+  right: 0px;
+  z-index: 1000;
+  display: none;
+  padding: 0;
+  padding-bottom: 4px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  background-color: #3184cf;
+  border-radius: 4px;
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.66) 0px 7px 12px -3px, rgba(9, 5, 43, 0.59) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 30px 73px 4px;
+}
+.dropdown-menu a {
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  width: 100%;
+}
+.dropdown-menu li {
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .dropdown-menu {
+    right: 3.1%;
+  }
+}
+
+.dropleft .dropdown-menu {
+  margin: 0 -6px 0 0;
+  border-radius: 6px;
+}
+
+.navbar-nav li:hover > .dropdown-menu {
+  display: block;
+}
+
+.admin-linkovi {
+  position: absolute;
+  width: 100px;
+  right: 15px;
+}
+.admin-linkovi i {
+  font-size: 24px;
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,155 @@
+@import 'variables';
+#hero {
+    width: 100%;
+    height: 54vh;
+    margin-bottom: -7vh;
+    padding-bottom: 30px;
+    display: flex;
+    box-shadow: $largescreen;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    background-image: repeating-linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.09),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.06),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            transparent 3px
+        ),
+        linear-gradient(45deg, rgba(46, 127, 240, 0.23), rgba(103, 228, 243, 0.26)), url(../img/bek10.gif);
+    @media (max-width: 1023px) {
+        height: 40vh;
+        margin-top: 0;
+        margin-bottom: -3vh;
+        padding: 0;
+    }
+    img {
+        height: 100%;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+    a.carousel-control-prev,
+    a.carousel-control-next {
+        width: 10%;
+    }
+    .carousel-indicators {
+        bottom: -20px;
+    }
+    .carousel-inner > .crousel-item {
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+    .title-holder {
+        width: 61%;
+        height: 97%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        /* margin-top: 0vh; */
+        background: #120e478a;
+        margin-top: 4%;
+        margin-right: 4%;
+        margin-left: auto;
+        // padding-bottom: 58px;
+        // padding-top: 38px;
+        background-image: $darkback;
+        box-shadow: rgb(9 5 43 / 61%) 0px 2px 4px, rgb(9 5 43 / 50%) 0px 7px 13px -3px, rgb(9 5 43 / 42%) 0px -3px 0px inset, rgb(9 5 43 / 71%) -3px 21px 33px 4px;
+        @media (max-width: 992px) {
+            width: 75%;
+            margin: auto;
+            // padding-bottom: 30px;
+        }
+        @media (max-width: 1024px) {
+            // padding-bottom: 40px;
+        }
+        h1 {
+            color: white;
+            // height: 30%;
+            width: 96%;
+            font-size: 22px;
+            // margin: auto;
+            margin-top: 6%;
+            font-family: "Play";
+            @media (max-width: 1284px) {
+                font-size: 22px;
+            }
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+            @media (min-width: 1285px) {
+                width: 80%;
+            }
+        }
+        p {
+            // font-size: 45px;
+            @media (max-width: 1284px) {
+                font-size: 42px;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+            @media (min-width: 1285px) {
+                font-size: 63px;
+            }
+            &:first-of-type {
+                margin-top: -3%;
+            }
+            &:last-of-type {
+                // font-size: 42px;
+                @media (max-width: 1284px) {
+                    font-size: 27px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 15px;
+                }
+                @media (min-width: 1285px) {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+    // P { za staticni back2.jpg
+    //     font-family: play;
+    // background: #2f4e612e;
+    // text-transform: uppercase;
+    // font-size: 61px;
+    // transform: skew(343deg, 0deg);
+    // border-radius: 16px;
+    // border: 8px solid #5cbdcb;
+    // padding: 20px;
+    // color: #c7e7ff;
+    // box-shadow: rgb(38 57 77) 0px 42px 23px -9px;
+    // font-weight: bold;
+    // text-align: center;
+    // letter-spacing: 2.4px;
+    // }
+}
+
+// .parent {
+//     height: 100%;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+// }
+

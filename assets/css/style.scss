@@ -1,0 +1,176 @@
+/* generalna podesavanja*/
+
+@font-face {
+    font-family: 'Neutrons';
+    src: url(NeutronsDemoRegular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Orbitron";
+    src: url(Orbitron-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Play";
+    src: url(Play-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Playb";
+    src: url(Play-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Archivo';
+    src: url(ArchivoBlack-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Freda';
+    src: url(FredokaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Russo';
+    src: url(RussoOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Coda';
+    src: url(CodaCaption-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Liza';
+    src: url(Electrolize-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Fbi';
+    src: url(Quantico-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Viga';
+    src: url(Viga-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Gugi';
+    src: url(Gugi-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Silk';
+    src: url(Silkscreen-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Got';
+    src: url(DotGothic16-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Gman';
+    src: url(Goldman-Bold.ttf) format('truetype');
+}
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Play";
+    margin-bottom: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    // background-image: url(../img/12.jpg);
+    background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+    background-color: #26ace19e;
+    // background-blend-mode: color;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background: url(../img/white1.jpg) repeat; */
+}
+#hero {
+    z-index: 444;
+}
+main {
+    z-index: 2;
+}
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:focus {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
+.backlight {
+    background-color: $lightback;
+}
+
+.myshadowsmall {
+    // box-shadow: rgba(81, 121, 253, 0.19) 0px 10px 20px, rgba(81, 121, 253, 0.23) 0px 6px 6px!important;
+    // box-shadow: rgba(81, 121, 253, 0.25) 0px 54px 55px, rgba(81, 121, 253, 0.12) 0px -12px 30px, rgba(81, 121, 253, 0.12) 0px 4px 6px, rgba(81, 121, 253, 0.17) 0px 12px 13px, rgba(81, 121, 253, 0.09) 0px -3px 5px!important;
+    box-shadow: $recomcardshadow;
+}
+.bigshadow {
+    border-radius: 0 0 10px 10px;
+    // box-shadow: rgba(31, 128, 192, 0.70) 0px 9px 27px -3px, rgba(25, 123, 204, 0.68) 0px 24px 60px -23px,
+    // rgba(25, 109, 204, 0.75) 0px -8px 6px 0px inset;
+    box-shadow: $largescreen;
+}
+.carddark {
+    background-image: $darkback;
+    box-shadow:  $tinyscreen;
+}
+section {
+    position: relative;
+}
+
+#naslovP {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+p.alert {
+    margin-top: 70px;
+    z-index: 500000000000;
+}
+
+.pagination-links {
+    margin: 30px 0;
+}
+
+a.pagination-links,
+.pagination li.active a {
+    padding: 5px;
+    margin: 2px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.pagination li.active a {
+    background: #27272eb8;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    
+    a {
+        cursor: default;
+    }
+    body {
+        font-size: 13px;
+    }
+    
+    h2 {
+        font-size: 1.45rem;
+    }
+
+}

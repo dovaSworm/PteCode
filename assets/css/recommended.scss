@@ -1,0 +1,68 @@
+@import "variables";
+#carousel-akcija {
+    margin: 3% 0 8% 0;
+    box-shadow: rgba(157, 180, 189, .45) 0 2px 4px, rgba(149, 189, 238, .37) 0 7px 13px -3px, rgba(182, 216, 249, .32) 0 -3px 0 inset;
+    // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 6px;
+    background: #ebf4fb;
+    border-radius: 10px;
+    a.carousel-control-prev {
+        width: auto;
+    }
+    a.carousel-control-next {
+        width: auto;
+    }
+    a.carousel-control-next i,
+    a.carousel-control-prev i {
+        color: black;
+        font-size: 30px;
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+}
+.rc-holder {
+    margin-top: 3%;
+}
+.recom-card {
+    box-shadow: rgba(157, 180, 189, .45) 0px 1px 3px 0px, rgba(182, 216, 249, .45) 0px 1px 2px 0px;
+    background-color: white;
+    width: 31.5%;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 5px;
+    transition: 0.6s;
+    text-align: center;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin: 5px 0;
+    }
+    p {
+        font-size: 13px;
+        font-family: "Roboto";
+        padding: 5px;
+        color: black;
+        text-align: left;
+    }
+    img {
+        max-width: stretch;
+        border-radius: 2px;
+        height: 160px;
+        padding: 8px;
+        opacity: 0.67;
+    }
+    h4 {
+        color: black;
+        font-size: 16px;
+        padding: 5px;
+        font-family: "Play";
+        font-weight: bold;
+        border-bottom: 1px dotted rgba(180, 180, 180, 0.6);
+    }
+}
+.fa-bullhorn {
+    color: $crvena;
+}
+.fa-thumbs-up {
+    color: $plava;
+}

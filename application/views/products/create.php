@@ -1,5 +1,4 @@
-<br><br><br>
-<div class="container">
+<div class="container edit backlight bigshadow">
     <h2 class="text-center"><?= $title ?></h2>
     <?php echo validation_errors(); ?>
     <?php echo form_open_multipart('products/create'); ?>

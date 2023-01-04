@@ -1,77 +1,45 @@
 <!--FOOTER section  -->
 <footer>
-    <!-- PARTNERS section -->
-    <section id="partneri">
-        <div class="container">
-            <div class="row no-gutters text-center flex-column">
-                <h6 class="text-center"><b>Pro-technology electronics</b></h6>
-                <p class="text-center"><b>generalni zastupnik najpoznatijih svetskih brendova</b></p>
-            </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" role="listbox">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/bondline.png" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/tarket-trans.png" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/cif-trans.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/kayo-trans.png" alt="Prva slika ">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/thermaltronics_logo.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/trenston.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="<?php echo base_url(); ?>assets/img/smt-trans.png" alt="Third slide">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <!-- CONTACT section -->
-    <div id="donji" class="bg-img1">
-        <section id="contact">
-            <div class="container">
-                <h5>Kako do nas?</h5>
-                <div class="row info">
-                    <div class="col col-12 col-md-4 col-lg-4">
+    <section id="contact" class="">
+        <div id="donji" >
+            <div class="container p-0">
+                <h4>Kako do nas?</h4>
+                <div class="row info no-gutters carddark">
+                    <div class="col col-12 col-md-6 col-lg-4 d-flex flex-column">
                         <h6>Adresa&nbsp;<i class="far fa-address-card"></i></h6>
                         <address>Vojvode Stepe 133, 11000 Beograd</address>
                         <h6>Mail&nbsp;<i class="far fa-envelope"></i></h6>
-                        <a href="mailto:protechnology.servis@gmail.com">protechnology.electronic@gmail.com</a>
+                        <a href="mailto:protechnology.electronic@gmail.com">protechnology.electronic@gmail.com</a>
                         <h6>Telefoni&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></h6>
-                        <a href="tel:063/810-1242">063/810-1242</a>
+                        <a href="tel:+38163/8101-242">+381 63 8101 242</a>
+                        <a href="tel:+381 67 7811 241">+381 67 7811 241</a>
+                        <a href="tel:+381 61 1444 676">+381 61 1444 676</a>
                     </div>
-                    <div class="col col-12 col-md-4 col-lg-4">
+                    <div class="col col-12 col-md-6 col-lg-4">
                         <h6>Radno vreme&nbsp;<i class="far fa-clock"></i></h6>
-                        <p>Radnim danom 10h - 19h</p>
-                        <p>Subotom 10h - 15h</p>
-                        <p>Nedeljom Ne radimo</p>
-                        <div class="d-block">
+                        <p>Radnim danom 9h - 18h</p>
+                        <p>Subotom i nedeljom ne radimo</p>
+                        <div class="facelink d-block">
                             <a href="https://www.facebook.com/protechnology.servis.3"><i class="fab fa-facebook-square"></i></a>
                             <a href="https://www.linkedin.com/in/pro-technology-servis-a751b617b/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-4 col-lg-4">
+                    <div class="col col-12 col-md-12 col-lg-4">
                         <div id="mapa">
                             <iframe src="https://maps.google.com/maps?q=vojvode%20stepe%20133%20BEograd&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <div class="row flex-column no-gutters">
+        <div class="row flex-column no-gutters dev-brend">
             <div class="m-auto">
-                <a href="http://www.doveden.com"><img src="<?php echo base_url(); ?>assets/img/rddesign-weis.png" alt="dovaSworm"></a>
+                <a href="http://www.doveden.com"><img src="<?php echo base_url(); ?>assets/img/rddesign-weis-kratki.png" alt="dovaSworm"></a>
             </div>
-            <p id="prava" class="text-success"></p>
+            <p id="prava"></p>
         </div>
     </div>
 </footer>

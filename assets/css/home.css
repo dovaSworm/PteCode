@@ -1,0 +1,120 @@
+#hero {
+  width: 100%;
+  height: 54vh;
+  margin-bottom: -7vh;
+  padding-bottom: 30px;
+  display: flex;
+  box-shadow: rgba(74, 104, 219, 0.54) 0px 11px 36px -20px, rgba(74, 111, 219, 0.71) 0px 16px 30px -30px, rgba(74, 151, 219, 0.88) 0px -2px 6px 0px inset;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.23), rgba(103, 228, 243, 0.26)), url(../img/bek10.gif);
+}
+@media (max-width: 1023px) {
+  #hero {
+    height: 40vh;
+    margin-top: 0;
+    margin-bottom: -3vh;
+    padding: 0;
+  }
+}
+#hero img {
+  height: 100%;
+}
+#hero #carouselExampleIndicators {
+  width: 100%;
+}
+#hero a.carousel-control-prev,
+#hero a.carousel-control-next {
+  width: 10%;
+}
+#hero .carousel-indicators {
+  bottom: -20px;
+}
+#hero .carousel-inner > .crousel-item {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+#hero .title-holder {
+  width: 61%;
+  height: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* margin-top: 0vh; */
+  background: rgba(18, 14, 71, 0.5411764706);
+  margin-top: 4%;
+  margin-right: 4%;
+  margin-left: auto;
+  background-image: rgba(9, 5, 43, 0.8117647059);
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.5) 0px 7px 13px -3px, rgba(9, 5, 43, 0.42) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 21px 33px 4px;
+}
+@media (max-width: 992px) {
+  #hero .title-holder {
+    width: 75%;
+    margin: auto;
+  }
+}
+#hero .title-holder h1 {
+  color: white;
+  width: 96%;
+  font-size: 22px;
+  margin-top: 6%;
+  font-family: "Play";
+}
+@media (max-width: 1284px) {
+  #hero .title-holder h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  #hero .title-holder h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .title-holder h1 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1285px) {
+  #hero .title-holder h1 {
+    width: 80%;
+  }
+}
+@media (max-width: 1284px) {
+  #hero .title-holder p {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .title-holder p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1285px) {
+  #hero .title-holder p {
+    font-size: 63px;
+  }
+}
+#hero .title-holder p:first-of-type {
+  margin-top: -3%;
+}
+@media (max-width: 1284px) {
+  #hero .title-holder p:last-of-type {
+    font-size: 27px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .title-holder p:last-of-type {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1285px) {
+  #hero .title-holder p:last-of-type {
+    font-size: 38px;
+  }
+}/*# sourceMappingURL=home.css.map */
