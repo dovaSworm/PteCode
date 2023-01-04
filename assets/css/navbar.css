@@ -2,17 +2,10 @@
   display: none;
   padding: 0;
   margin: 0;
-  background: rgba(79, 173, 206, 0.92);
   transition: all 0.9s;
-  height: 6vh;
-  /* color: white; */
+  background-position: left bottom;
   background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
   box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.66) 0px 7px 2px -7px, rgba(9, 5, 43, 0.59) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px -1px 6px 4px;
-}
-@media (min-width: 1219px) {
-  .navbar {
-    height: 7vh;
-  }
 }
 .navbar img {
   height: 100%;
@@ -79,17 +72,28 @@
 
 #logo {
   display: flex;
-  height: 100%;
+  height: 63px;
+}
+@media (max-width: 920px) {
+  #logo {
+    height: 50px;
+  }
 }
 @media (max-width: 767px) {
   #logo h2 {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 375px) {
+  #logo {
+    height: 35px;
+  }
+}
 #logo h1 {
   font-size: 16px;
 }
 #logo p {
+  letter-spacing: 2.2px;
   padding-left: 8px;
   font-size: 14px;
 }
@@ -105,7 +109,7 @@
 }
 @media (max-width: 375px) {
   #logo p {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 #logo p:last-of-type {
@@ -123,12 +127,35 @@
 }
 @media (max-width: 375px) {
   #logo p:last-of-type {
-    font-size: 8px;
+    font-size: 7px;
+  }
+}
+#logo p i {
+  font-size: 8px;
+  margin-left: 4px;
+}
+@media (max-width: 1280px) {
+  #logo p i {
+    margin-left: 2px;
+  }
+}
+@media (max-width: 375px) {
+  #logo p i {
+    font-size: 6px;
+  }
+}
+#logo p .fa-minus::before {
+  top: -3px;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  #logo p .fa-minus::before {
+    top: -1px;
   }
 }
 
 .navbar-collapse {
-  margin-top: -1px;
+  position: relative;
 }
 
 .navbar-nav {
@@ -136,15 +163,7 @@
 }
 @media (max-width: 992px) {
   .navbar-nav {
-    width: 40%;
-    background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
-    border-radius: 0 0 12px 10px;
     padding: 20px 0;
-  }
-}
-@media (max-width: 766px) {
-  .navbar-nav {
-    width: 60%;
   }
 }
 .navbar-nav .aktivna {
@@ -160,7 +179,7 @@
 .navbar-nav li.nav-item {
   text-align: center;
   font-family: "Play";
-  margin: 5px;
+  margin: 3px;
   border-radius: 4px;
   width: 100px;
   background: #3184cf;
@@ -200,7 +219,6 @@
   color: #dbebf7;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 2.4px;
   text-shadow: -4px 3px 0 rgba(9, 90, 150, 0.7882352941), -2px 1px 0 rgba(9, 90, 150, 0.7882352941), -4px 2px 0 rgba(9, 90, 150, 0.7882352941), 0 0 10px #ffffff;
 }
 
@@ -213,7 +231,6 @@
   position: absolute;
   left: auto;
   right: 0px;
-  z-index: 1000;
   display: none;
   padding: 0;
   padding-bottom: 4px;

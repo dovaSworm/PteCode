@@ -1,25 +1,30 @@
 @import "variables";
 #carousel-akcija {
-    margin: 3% 0 8% 0;
     box-shadow: rgba(157, 180, 189, .45) 0 2px 4px, rgba(149, 189, 238, .37) 0 7px 13px -3px, rgba(182, 216, 249, .32) 0 -3px 0 inset;
-    // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: 6px;
     background: #ebf4fb;
     border-radius: 10px;
+    a.carousel-control-next,
     a.carousel-control-prev {
-        width: auto;
+        position: relative;
+        margin: auto;
+        display: inline-block;
+        width: fit-content;
     }
-    a.carousel-control-next {
-        width: auto;
+    a.carousel-control-prev {
+        margin-right: 25%;
     }
     a.carousel-control-next i,
     a.carousel-control-prev i {
         color: black;
-        font-size: 30px;
+        font-size: 18px;
         @media (max-width: 767px) {
-            font-size: 25px;
+            font-size: 16px;
         }
     }
+}
+.carusel-container {
+    padding: 7px 0;
 }
 .rc-holder {
     margin-top: 3%;
@@ -61,8 +66,38 @@
     }
 }
 .fa-bullhorn {
+    text-shadow: $blockfont;
     color: $crvena;
 }
 .fa-thumbs-up {
+    text-shadow: $blockfont;
     color: $plava;
+}
+.fa-list {
+    text-shadow: $blockfont;
+    color: $plava;
+}
+
+/* CSS */
+.button-33 {
+  background-color: #c2f0fb;
+  border-radius: 100px;
+  box-shadow: rgba(44, 182, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 182, 187, 0.15) 0 1px 2px,rgba(44, 182, 175, 0.15) 0 2px 4px,rgba(44, 118, 187, 0.15) 0 4px 8px,rgba(44, 130, 187, 0.15) 0 8px 16px,rgba(44, 118, 187, 0.15) 0 16px 32px;
+  color: rgb(44, 9, 90);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Orbitron";
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+//   touch-action: manipulation;
+}
+.button-33:hover {
+  box-shadow: rgba(44, 158, 187, 0.35) 0 -25px 18px -14px inset,rgba(44, 134, 187, 0.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44, 130, 187, 0.25) 0 4px 8px,rgba(44, 134, 187, 0.25) 0 8px 16px,rgba(44, 130, 187, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }

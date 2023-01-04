@@ -1,6 +1,6 @@
 <div class="col col-lg-8 col-12">
-    <h3 class="text-center">&nbspSpecijalna ponuda&nbsp<i class="fa fa-bullhorn"></i></h3>
-    <div class="container p-0 carusel-container">
+    <h3 class="text-center foot-h">&nbspSpecijalna ponuda&nbsp<i class="fa fa-bullhorn"></i></h3>
+    <div class="container carusel-container">
         <div id="carousel-akcija" class="carousel slide" data-ride="carousel">
             <!-- <ol class="carousel-indicators">
                 <li data-target="#carousel-akcija" data-slide-to="0" class="active"></li>https://protech-electronics.rs/assets/img/kayo.jpg
@@ -41,15 +41,17 @@
                     <img data-enlargable class="d-block w-100" src="<?php echo base_url(); ?>assets/img/11.jpg" alt="Slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carousel-akcija" role="button" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#carousel-akcija" role="button" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <div class="control-holder text-center">
+                <a class="carousel-control-prev" href="#carousel-akcija" role="button" data-slide="prev">
+                <button class="button-33" role="button"><<</button>
+                </a>
+                <a class="carousel-control-next" href="#carousel-akcija" role="button" data-slide="next">
+                <button class="button-33" role="button">>></i></button>
+                </a>
+            </div>
         </div>
     </div>
-    <h3 class="text-center">&nbspPreporučujemo&nbsp<i class="far fa-thumbs-up"></i></h3>
+    <h3 class="text-center foot-h">&nbspPreporučujemo&nbsp<i class="far fa-thumbs-up"></i></h3>
     <div class="row no-gutters d-flex justify-content-around rc-holder">
         <?php foreach ($products as $product) : ?>
             <div class="recom-card flex-column">

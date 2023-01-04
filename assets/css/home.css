@@ -1,120 +1,298 @@
 #hero {
   width: 100%;
-  height: 54vh;
-  margin-bottom: -7vh;
-  padding-bottom: 30px;
+  height: 40vh;
+  position: relative;
+  z-index: 22;
   display: flex;
   box-shadow: rgba(74, 104, 219, 0.54) 0px 11px 36px -20px, rgba(74, 111, 219, 0.71) 0px 16px 30px -30px, rgba(74, 151, 219, 0.88) 0px -2px 6px 0px inset;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left center;
-  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.23), rgba(103, 228, 243, 0.26)), url(../img/bek10.gif);
+  background-image: linear-gradient(45deg, rgba(46, 127, 240, 0), rgba(12, 45, 79, 0.12)), url(../img/bek10.gif);
 }
 @media (max-width: 1023px) {
   #hero {
-    height: 40vh;
     margin-top: 0;
-    margin-bottom: -3vh;
-    padding: 0;
   }
 }
-#hero img {
+#hero .screen {
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.5) 0px 7px 13px -3px, rgba(9, 5, 43, 0.42) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 11px 33px 4px;
+  background: rgba(18, 14, 71, 0.47);
   height: 100%;
-}
-#hero #carouselExampleIndicators {
   width: 100%;
+  margin: auto;
 }
-#hero a.carousel-control-prev,
-#hero a.carousel-control-next {
-  width: 10%;
-}
-#hero .carousel-indicators {
-  bottom: -20px;
-}
-#hero .carousel-inner > .crousel-item {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-#hero .title-holder {
-  width: 61%;
-  height: 97%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  /* margin-top: 0vh; */
-  background: rgba(18, 14, 71, 0.5411764706);
-  margin-top: 4%;
-  margin-right: 4%;
-  margin-left: auto;
-  background-image: rgba(9, 5, 43, 0.8117647059);
-  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.5) 0px 7px 13px -3px, rgba(9, 5, 43, 0.42) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 21px 33px 4px;
-}
-@media (max-width: 992px) {
-  #hero .title-holder {
-    width: 75%;
-    margin: auto;
+@media (max-width: 1024px) {
+  #hero .screen {
+    display: flex;
   }
 }
-#hero .title-holder h1 {
-  color: white;
-  width: 96%;
-  font-size: 22px;
-  margin-top: 6%;
-  font-family: "Play";
+#hero .logoparaph {
+  letter-spacing: 3.2px;
 }
 @media (max-width: 1284px) {
-  #hero .title-holder h1 {
+  #hero .logoparaph {
+    font-size: 49px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .logoparaph {
     font-size: 22px;
   }
 }
-@media (max-width: 992px) {
-  #hero .title-holder h1 {
-    font-size: 18px;
-  }
-}
-@media (max-width: 767px) {
-  #hero .title-holder h1 {
-    font-size: 13px;
-  }
-}
 @media (min-width: 1285px) {
-  #hero .title-holder h1 {
-    width: 80%;
-  }
-}
-@media (max-width: 1284px) {
-  #hero .title-holder p {
-    font-size: 42px;
-  }
-}
-@media (max-width: 767px) {
-  #hero .title-holder p {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1285px) {
-  #hero .title-holder p {
+  #hero .logoparaph {
     font-size: 63px;
   }
 }
-#hero .title-holder p:first-of-type {
+#hero .logoparaph:first-of-type {
   margin-top: -3%;
+  margin-bottom: -3%;
+}
+@media (max-width: 992px) {
+  #hero .logoparaph:first-of-type {
+    margin-bottom: -1%;
+  }
 }
 @media (max-width: 1284px) {
-  #hero .title-holder p:last-of-type {
-    font-size: 27px;
+  #hero .logoparaph:last-of-type {
+    font-size: 34px;
   }
 }
 @media (max-width: 767px) {
-  #hero .title-holder p:last-of-type {
-    font-size: 15px;
+  #hero .logoparaph:last-of-type {
+    font-size: 19px;
   }
 }
 @media (min-width: 1285px) {
-  #hero .title-holder p:last-of-type {
-    font-size: 38px;
+  #hero .logoparaph:last-of-type {
+    font-size: 49px;
   }
+}
+#hero .logoparaph i {
+  font-size: 18px !important;
+  margin-left: 9px;
+  margin-right: -14px;
+}
+@media (max-width: 1280px) {
+  #hero .logoparaph i {
+    font-size: 13px !important;
+    margin-left: 6px;
+    margin-right: -11px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .logoparaph i {
+    font-size: 8px !important;
+    margin-left: 2px;
+    margin-right: -4px;
+  }
+}
+#hero .logoparaph .fa-minus::before {
+  top: -12px;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  #hero .logoparaph .fa-minus::before {
+    top: -7px;
+  }
+}
+@media (max-width: 767px) {
+  #hero .logoparaph .fa-minus::before {
+    top: -3px;
+  }
+}
+
+.title-logo-holder {
+  opacity: 0;
+  margin-bottom: 2.5%;
+}
+
+@media (min-width: 1024px) {
+  .title-wrap {
+    margin-right: 4% !important;
+  }
+}
+
+.title-info {
+  opacity: 0;
+}
+
+.title-info-style {
+  text-align: center !important;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Play";
+}
+@media (max-width: 1284px) {
+  .title-info-style {
+    font-size: 21px;
+  }
+}
+@media (max-width: 1024px) {
+  .title-info-style {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .title-info-style {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .title-info-style {
+    font-size: 16px;
+    margin-left: 0 !important;
+  }
+}
+
+@-webkit-keyframes anima-hero {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes anima-hero {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+.anima-hero {
+  -webkit-animation: anima-hero 1.2s forwards 0s linear;
+          animation: anima-hero 1.2s forwards 0s linear;
+}
+
+@-webkit-keyframes h1-anima {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg) scale(0.4) translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes h1-anima {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg) scale(0.4) translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+}
+.h1-anima {
+  -webkit-animation: h1-anima 0.8s forwards 0.44s linear;
+          animation: h1-anima 0.8s forwards 0.44s linear;
+}
+
+@-webkit-keyframes nav-anima {
+  0% {
+    transform: translateX(100%);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nav-anima {
+  0% {
+    transform: translateX(100%);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.nav-anima {
+  -webkit-animation: nav-anima 0.3s forwards 0s linear;
+          animation: nav-anima 0.3s forwards 0s linear;
+}
+
+@-webkit-keyframes title-anima {
+  0% {
+    transform: skewX(270deg);
+    pointer-events: none;
+  }
+  90% {
+    transform: skewX(273deg);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: skewX(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes title-anima {
+  0% {
+    transform: skewX(270deg);
+    pointer-events: none;
+  }
+  90% {
+    transform: skewX(273deg);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: skewX(360deg);
+    opacity: 1;
+  }
+}
+.title-anima {
+  -webkit-animation: title-anima 0.017243s forwards 0.4s linear;
+          animation: title-anima 0.017243s forwards 0.4s linear;
+}
+
+@-webkit-keyframes title-anima2 {
+  0% {
+    transform: skewX(0deg);
+    pointer-events: none;
+  }
+  90% {
+    transform: skewX(88deg);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: skewX(0.001deg);
+    opacity: 1;
+  }
+}
+
+@keyframes title-anima2 {
+  0% {
+    transform: skewX(0deg);
+    pointer-events: none;
+  }
+  90% {
+    transform: skewX(88deg);
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: skewX(0.001deg);
+    opacity: 1;
+  }
+}
+.title-anima2 {
+  -webkit-animation: title-anima2 0.017243s forwards 0.1s linear;
+          animation: title-anima2 0.017243s forwards 0.1s linear;
 }/*# sourceMappingURL=home.css.map */

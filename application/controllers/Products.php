@@ -60,6 +60,7 @@ class Products extends CI_Controller
         $this->load->view('templates/header', $naslov);
         $this->load->view('templates/menu');
         $this->load->view('products/index', $data);
+        $this->load->view('templates/partneri');
         $this->load->view('templates/footer');
     }
 

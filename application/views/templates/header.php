@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Pro-technology electronics nudi veliki izbor lemilica, sistema za montažu pcb komponenti, robota kao i antistaički program odeće i podova.">
+    <meta name="description" content="Pro-Technology electronics nudi veliki izbor lemilica, sistema za montažu pcb komponenti, robota kao i antistaički program odeće i podova.">
     <meta name="robots" content="index,follow">
     <meta name="author" content="rdDesign">
     <meta name="keywords" content="pro-technology, sistemi, oprema, electronics, prodaja, lemilice, roboti, asembliranje, motnaža, sistemi za montažu, ESD, PCB,  manualni sistemi, automatski sistemi, izvlačenje isparenja, dodatna oprema, štampači, antistatički program, antistatičke majice, antistatički podovi, antistatički mantili, vizuelna kontrola, desktop peći, peci, antistatički, video mikroskpi">
@@ -40,9 +40,7 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div id="nav-holder" class="container p-0 h-100 nav-holder">
                 <div id="logo">
-                <!-- <p class="logoparaph">Pro Technology</p> -->
-                    <a class="navbar-brand" href="<?php echo base_url(); ?>"><p class="logoparaph">Pro Technology</p><p class="logoparaph">Electronics</p></a>
-                    <!-- <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/trans.png" alt="Pro-technology"></a> -->
+                    <a class="navbar-brand" href="<?php echo base_url(); ?>"><p class="logoparaph">Pro<i class="fas fa-minus"></i>Technology</p><p class="logoparaph">Electronics</p></a>
 
                     <div class="title-phone d-flex ">
                         <div class="m-auto align-self-md-center"><a href="tel:+38163/8101-242"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<span id="hide-phone">+381 63 8101 242</span></a></div>
@@ -179,8 +177,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div id="zaNaslov">
-            </div> -->
             <?php if ($this->session->userdata('logged_in')) : ?>
                 <div class="admin-linkovi d-flex justify-content-around">
                     <a title="Novi proizvod" class="nav-link" href="<?php echo base_url(); ?>products/create"><i class="fas fa-plus-square"></i></a>

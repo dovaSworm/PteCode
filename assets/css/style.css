@@ -1,67 +1,23 @@
 /* generalna podesavanja*/
 @font-face {
   font-family: "Neutrons";
-  src: url(NeutronsDemoRegular.ttf) format("truetype");
+  src: url(../fonts/NeutronsDemoRegular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Orbitron";
-  src: url(Orbitron-ExtraBold.ttf) format("truetype");
+  src: url(../fonts/Orbitron-ExtraBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Play";
-  src: url(Play-Regular.ttf) format("truetype");
+  src: url(../fonts/Play-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Playb";
-  src: url(Play-Bold.ttf) format("truetype");
+  src: url(../fonts/Play-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto";
-  src: url(Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Archivo";
-  src: url(ArchivoBlack-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Freda";
-  src: url(FredokaOne-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Russo";
-  src: url(RussoOne-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Coda";
-  src: url(CodaCaption-ExtraBold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Liza";
-  src: url(Electrolize-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Fbi";
-  src: url(Quantico-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Viga";
-  src: url(Viga-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Gugi";
-  src: url(Gugi-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Silk";
-  src: url(Silkscreen-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Got";
-  src: url(DotGothic16-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Gman";
-  src: url(Goldman-Bold.ttf) format("truetype");
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
 h1,
 h2,
@@ -87,15 +43,6 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background: url(../img/white1.jpg) repeat; */
-}
-
-#hero {
-  z-index: 444;
-}
-
-main {
-  z-index: 2;
 }
 
 a,
@@ -119,13 +66,7 @@ a:focus {
 }
 
 .bigshadow {
-  border-radius: 0 0 10px 10px;
   box-shadow: rgba(74, 104, 219, 0.54) 0px 11px 36px -20px, rgba(74, 111, 219, 0.71) 0px 16px 30px -30px, rgba(74, 151, 219, 0.88) 0px -2px 6px 0px inset;
-}
-
-.carddark {
-  background-image: rgba(9, 5, 43, 0.8117647059);
-  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.5) 0px 7px 13px -3px, rgba(9, 5, 43, 0.42) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 12px 33px 4px;
 }
 
 section {
@@ -168,5 +109,146 @@ a.pagination-links,
   }
   h2 {
     font-size: 1.45rem;
+  }
+}
+.galerija {
+  height: 2200px;
+  padding: 50px 50px;
+  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+  background-color: rgba(38, 172, 225, 0.6196078431);
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.galerija .logoparaph {
+  margin-bottom: 0;
+  font-style: italic;
+  font-family: "Neutrons";
+  text-transform: uppercase;
+  color: #dbebf7;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2.4px;
+  text-shadow: -4px 3px 0 rgba(9, 90, 150, 0.7882352941), -2px 1px 0 rgba(9, 90, 150, 0.7882352941), -4px 2px 0 rgba(9, 90, 150, 0.7882352941), 0 0 10px #ffffff;
+}
+.galerija #logo2 {
+  display: flex;
+  height: 62px;
+}
+@media (max-width: 920px) {
+  .galerija #logo2 {
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija #logo2 h2 {
+    font-size: 1.2rem;
+  }
+}
+.galerija #logo2 h1 {
+  font-size: 16px;
+}
+.galerija #logo2 p {
+  padding-left: 8px;
+  font-size: 14px;
+}
+@media (min-width: 1281px) {
+  .galerija #logo2 p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija #logo2 p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .galerija #logo2 p {
+    font-size: 10px;
+  }
+}
+.galerija #logo2 p:last-of-type {
+  font-size: 12px;
+}
+@media (min-width: 1281px) {
+  .galerija #logo2 p:last-of-type {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija #logo2 p:last-of-type {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .galerija #logo2 p:last-of-type {
+    font-size: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .galerija .title-holder2 {
+    width: 75%;
+    margin: auto;
+  }
+}
+.galerija .title-holder2 h1 {
+  color: white;
+  width: 96%;
+  font-size: 22px;
+  margin-top: 6%;
+  font-family: "Play";
+}
+@media (max-width: 1284px) {
+  .galerija .title-holder2 h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .galerija .title-holder2 h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija .title-holder2 h1 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1285px) {
+  .galerija .title-holder2 h1 {
+    width: 80%;
+  }
+}
+@media (max-width: 1284px) {
+  .galerija .title-holder2 p {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija .title-holder2 p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1285px) {
+  .galerija .title-holder2 p {
+    font-size: 63px;
+  }
+}
+.galerija .title-holder2 p:first-of-type {
+  margin-top: -3%;
+}
+@media (max-width: 1284px) {
+  .galerija .title-holder2 p:last-of-type {
+    font-size: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .galerija .title-holder2 p:last-of-type {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1285px) {
+  .galerija .title-holder2 p:last-of-type {
+    font-size: 38px;
   }
 }/*# sourceMappingURL=style.css.map */

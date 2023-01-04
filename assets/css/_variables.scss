@@ -4,10 +4,8 @@ $svetlosiva: rgba(197, 198, 200, 1);
 $siva: rgba(32, 40, 51, 1);
 $plava: #275ea3;
 $svetloplava: rgb(188, 230, 244);
-// $mainback:#09052b;
-// $backzakartice: #09052bcf;
 $ljuba: rgb(83, 15, 234);
-$darkback: rgba(9, 5, 43, 0.8117647059);
+$darkback: rgba(9, 5, 43, 0.7417647059);
 $lightback:rgba(236, 243, 251, 0.9490196078);
 $box-shadow-main: rgb(9 5 43 / 61%) 0px 2px 4px, rgb(9 5 43 / 66%) 0px 7px 12px -3px, rgb(9 5 43 / 59%) 0px -3px 0px inset;
 $box-shadow-active: rgb(9 5 43 / 61%) 0px 0px 2px, rgb(9 5 43 / 14%) 0px 3px 9px -3px, rgb(9 5 43 / 43%) 0px -2px 0px inset;
@@ -15,7 +13,7 @@ $mainback: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0
 $tinyscreen: rgb(9 5 43 / 61%) 0px 2px 4px, rgb(9 5 43 / 50%) 0px 7px 13px -3px, rgb(9 5 43 / 42%) 0px -3px 0px inset, rgb(9 5 43 / 71%) -3px 12px 33px 4px;
 $largescreen: rgb(74 104 219 / 54%) 0px 11px 36px -20px, rgb(74 111 219 / 71%) 0px 16px 30px -30px, rgb(74 151 219 / 88%) 0px -2px 6px 0px inset;
 $recomcardshadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px!important;
-
+$blockfont: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 // .parent {
 //     height: 100%;
 //     display: grid;

@@ -1,119 +1,20 @@
-@import 'variables';
-#partneri {
-    // background: rgba(255, 255, 255, 0.966);
-    padding: 40px 0;
-    // border-radius: 6px;
-    // box-shadow: rgba(50, 50, 93, 0.85) 0px 50px 100px -20px, rgba(0, 0, 0, 0.98) 0px 30px 60px -30px, rgba(10, 37, 64, 0.85) 0px -2px 6px 0px inset;
-    // box-shadow: 9px 9px 29px 12px #00000070;
-    p {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        // color: rgb(14, 55, 68);
-        font-size: 18px;
-        padding: 5px;
-        @media (max-width: 767px) {
-            margin-top: 3px;
-            
-        }
-    }
-    h6 {
-        // color: rgb(14, 55, 68);
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: "Orbitron";
-        font-size: 2rem;
-        font-weight: 900;
-        @media (max-width: 767px) {
-            font-size: 1.5rem;
-        }
-    }
-    
-    img {
-        margin: auto;
-    }
-    #carouselExampleIndicators {
-        height: unset;
-        img {
-            display: block;
-            margin: auto;
-            height: 60px;
-            @media (max-width: 767px) {
-                height: 40px;
-            }
-        }
-    }
-    @media (max-width: 767px) {
-    }
-}
-.partner-holder {
-//     margin: auto;
-//     width: 50%;
-//     // @media (max-width: 767px) {
-//     //     width: 75%;
-//     // }
-//     @media (max-width: 992px) {
-//         width: 80%;
-//     }
-//     box-shadow: inset 0 0 6px #9da2a5;
-//     padding: 15px 0;
-//     background: #fafafa;
-//     border-radius: 10px;
-}
-// div.row.no-gutters.myshadow {
-//     position: relative;
-//     z-index: 555;
-// }
+@import "variables";
 
-.tech-supp {
+.foot-h {
+    color: $plava;
     margin-top: 30px;
-    a {
-        margin: auto;
-        color: $plava;
-        font-size: 1.4rem;
-        // @media (max-width: 767px) {
-        //     font-size: 11px;
-        // }
+    margin-bottom: 20px;
+    font-family: "Orbitron";
+    font-size: 2rem;
+    text-shadow: $blockfont;
+    @media (max-width: 767px) {
+        font-size: 1.5rem;
     }
 }
-
-// .info {
-//     background-color: $backzakartice;
-//     padding: 5px 10px;
-//     border-radius: 4px;
-// }
 /* FOOTER -------------------------------------------------------------------------------------------------------*/
-
-#contact {
-    // clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
-    // padding-top: 80px;
-    @media (max-width: 767px) {
-        // padding-top: 30px;
-        // clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
-    }
-}
-
 footer {
-    margin-top: 60px;
     @media (max-width: 767px) {
-        margin-top: 15%;
     }
-    // section.bg-img1::after {
-    //     content: "";
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: #09052b9e;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     z-index: 1;
-    // }
-    // section.bg-img1 > * {
-    //     position: relative;
-    //     z-index: 2;
-    // }
     p {
         display: block;
         margin: auto;
@@ -124,90 +25,106 @@ footer {
         display: block;
         margin: auto;
     }
-    .facelink i {
-        margin-top: 25px;
-        margin-right: 10px;
-        font-size: 40px;
+    i {
+        text-shadow: $blockfont;
+        color: #275ea3;
+        font-size: 28px;
     }
-    #prava {
-        color: $svetloplava;
-        text-align: center;
-        font-size: 12px;
-        margin: 10px 0;
-    }
-}
-
-#donji {
-    padding: 0 15px 60px 15px;
-    width: 100%;
-    color: white;
-    @media (max-width: 767px) {
-        padding-bottom: 15%;
+    .facelink {
+        margin: auto;
+        display: block;
+        @media (max-width: 992px) {
+            margin-bottom: 15px !important;
+        }
+        i {
+            margin-right: 10px;
+            font-size: 40px;
+        }
     }
     h4 {
-        background-color: $darkback;
-        padding: 10px;
+        text-shadow: $blockfont;
+        text-align: center;
         margin-bottom: 15px;
-        border-bottom: 2px solid $crvena;
         border-radius: 4px;
+        font-family: "Orbitron";
+        font-weight: bolder;
+        color: #275ea3;
         @media (max-width: 767px) {
             margin-top: 0;
         }
     }
-    ul.nav a {
-        color: white;
-        font-size: 13px;
+    .foot-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    a:hover,
+    a i:hover {
+        color: $crvena;
     }
 }
-.info {
-    background-color: $darkback;
-    padding: 5px 10px;
-    border-radius: 4px;
-    // box-shadow:  rgb(9, 5, 43, .61) 0px 2px 4px, rgb(9, 5, 43, .71) 0px 7px 13px -3px, rgb(9, 5, 43, .761) 0px -3px 0px inset, rgb(9, 5, 43, .71) -3px 21px 33px 4px;
-    // // box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
-    p,
-    a {
-        font-size: 13px;
-        margin: 10px 10px 0 0;
+#prava {
+    color: $svetloplava;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
+}
+#contact {
+    @media (max-width: 767px) {
     }
-    address {
-        margin-bottom: 0 !important;
-        font-size: 13px;
-        margin: 10px 10px 0 0;
+}
+.con-card {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+    @media (max-width: 992px) {
+        margin: 8px;
+        padding: 8px;
     }
+}
+.con-item {
+    margin-bottom: 15px;
     h6 {
-        border-bottom: 2px solid $ljuba;
-        margin: 10px 10px 0 0;
+        font-family: "Orbitron";
+        color: #275ea3;
         width: fit-content;
+        font-size: 1.2rem;
     }
-    #mapa {
-        padding: 15px 0;
-        z-index: 0;
-        margin-top: 14px;
-        width: 100%;
-        @media (max-width: 767px) {
-            width: 100%;
-        }
-        iframe {
-            box-sizing: border-box;
-            height: 230px;
-            width: 100%;
-            margin: auto;
-            border: 2px solid $ljuba;
-        }
+    a,
+    p,
+    address {
+        display: block;
+        margin: 0;
+        width: fit-content;
+    }   
+}
+.mail a {
+    @media (max-width: 992px) {
+        font-size: 13px;
     }
 }
-
+#mapa {
+    z-index: 0;
+    width: 100%;
+    border-radius: 6px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+    iframe {
+        border-radius: 6px;
+        box-sizing: border-box;
+        height: 370px;
+        width: 100%;
+        margin: auto;
+        border: none;
+    }
+}
 .dev-brend {
-    box-shadow: rgb(9 5 43 / 59%) 0px 3px 0px inset, rgb(9 5 43 / 71%) -3px -1px 10px 3px, rgb(9 5 43 / 66%) 0px -7px 2px -7px;
+    position: relative;
+    box-shadow: rgb(9 5 43 / 38%) 0px 3px 0px inset, rgb(9 5 43 / 39%) -3px -1px 10px 3px,
+        rgb(9 5 43 / 14%) 0px -7px 2px -7px;
     background-image: $mainback;
     img {
         margin-top: 10px;
         width: 180px;
     }
-}
-
-div.cookieinfo {
-    background: rgba(238, 238, 238, 0.7) !important;
-    width: 29%;
 }

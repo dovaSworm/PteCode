@@ -1,9 +1,9 @@
 <main>
         <section id="main" class="">
-                <div class="container backlight main-div bigshadow">
+                <div class="container backlight main-div">
                         <div class="row mt-3 mt-lg-5 no-gutters main-holder">
                                 <div class="main-menu flex-column d-flex justify-content-start col-12 col-lg-4 pr-lg-3">
-                                        <h3>&nbspKategorije</h3>
+                                        <h3 class="text-center foot-h">Kategorije&nbsp<i class="fas fa-list"></i></h3>
                                         <ul id="menu-ul">
                                                 <li>
                                                         <a data-toggle="collapse" data-parent="#menu-ul" href="#collapse-1" class="collapsed">

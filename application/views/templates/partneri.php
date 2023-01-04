@@ -1,7 +1,7 @@
 <div class="container" id="partneri">
 
     <div class="row no-gutters text-center flex-column">
-        <h6 class="text-center"><b>PRO-TECHNOLOGY electronics</b></h6>
+        <h6 class="text-center foot-h"><b>PRO-TECHNOLOGY electronics</b></h6>
         <p class="text-center"><b>generalni zastupnik najpoznatijih svetskih brendova</b></p>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" role="listbox">

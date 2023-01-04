@@ -1,70 +1,27 @@
 /* generalna podesavanja*/
 
 @font-face {
-    font-family: 'Neutrons';
-    src: url(NeutronsDemoRegular.ttf) format('truetype');
+    font-family: "Neutrons";
+    src: url(../fonts/NeutronsDemoRegular.ttf) format("truetype");
 }
 @font-face {
     font-family: "Orbitron";
-    src: url(Orbitron-ExtraBold.ttf) format("truetype");
+    src: url(../fonts/Orbitron-ExtraBold.ttf) format("truetype");
 }
 @font-face {
     font-family: "Play";
-    src: url(Play-Regular.ttf) format("truetype");
+    src: url(../fonts/Play-Regular.ttf) format("truetype");
 }
 @font-face {
     font-family: "Playb";
-    src: url(Play-Bold.ttf) format("truetype");
+    src: url(../fonts/Play-Bold.ttf) format("truetype");
 }
 @font-face {
-    font-family: 'Roboto';
-    src: url(Roboto-Regular.ttf) format('truetype');
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
-@font-face {
-    font-family: 'Archivo';
-    src: url(ArchivoBlack-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Freda';
-    src: url(FredokaOne-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Russo';
-    src: url(RussoOne-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Coda';
-    src: url(CodaCaption-ExtraBold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Liza';
-    src: url(Electrolize-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Fbi';
-    src: url(Quantico-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Viga';
-    src: url(Viga-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Gugi';
-    src: url(Gugi-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Silk';
-    src: url(Silkscreen-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Got';
-    src: url(DotGothic16-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Gman';
-    src: url(Goldman-Bold.ttf) format('truetype');
-}
-@import 'variables';
+
+@import "variables";
 
 h1,
 h2,
@@ -80,26 +37,36 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
-    // background-image: url(../img/12.jpg);
-    background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.03), transparent 3px), linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+    background-image: repeating-linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.09),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.06),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            transparent 3px
+        ),
+        linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
     background-color: #26ace19e;
-    // background-blend-mode: color;
     background-size: cover !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background: url(../img/white1.jpg) repeat; */
 }
-#hero {
-    z-index: 444;
-}
-main {
-    z-index: 2;
-}
+
 a,
 a:hover {
     color: inherit;
@@ -120,14 +87,7 @@ a:focus {
     box-shadow: $recomcardshadow;
 }
 .bigshadow {
-    border-radius: 0 0 10px 10px;
-    // box-shadow: rgba(31, 128, 192, 0.70) 0px 9px 27px -3px, rgba(25, 123, 204, 0.68) 0px 24px 60px -23px,
-    // rgba(25, 109, 204, 0.75) 0px -8px 6px 0px inset;
     box-shadow: $largescreen;
-}
-.carddark {
-    background-image: $darkback;
-    box-shadow:  $tinyscreen;
 }
 section {
     position: relative;
@@ -161,16 +121,146 @@ a.pagination-links,
 }
 
 @media (max-width: 767px) {
-    
     a {
         cursor: default;
     }
     body {
         font-size: 13px;
     }
-    
+
     h2 {
         font-size: 1.45rem;
     }
+}
 
+.galerija {
+    height: 2200px;
+    padding: 50px 50px;
+    background-image: repeating-linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.09),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.06),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.03),
+            transparent 3px
+        ),
+        linear-gradient(45deg, rgba(46, 127, 240, 0.73), rgba(103, 228, 243, 0.86)), url(../img/12.jpg);
+    background-color: #26ace19e;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .logoparaph {
+        margin-bottom: 0;
+        font-style: italic;
+        font-family: "Neutrons";
+        text-transform: uppercase;
+        color: #dbebf7;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2.4px;
+        text-shadow: -4px 3px 0 #095a96c9, -2px 1px 0 #095a96c9, -4px 2px 0 #095a96c9, 0 0 10px #ffffff;
+    }
+    #logo2 {
+        display: flex;
+        height: 62px;
+        @media (max-width: 920px) {
+            height: 50px;
+        }
+        @media (max-width: 767px) {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+        h1 {
+            font-size: 16px;
+        }
+        p {
+            padding-left: 8px;
+            font-size: 14px;
+            @media (min-width: 1281px) {
+                font-size: 18px;
+            }
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+            @media (max-width: 375px) {
+                font-size: 10px;
+            }
+            &:last-of-type {
+                font-size: 12px;
+                @media (min-width: 1281px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+                @media (max-width: 375px) {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .title-holder2 {
+        @media (max-width: 992px) {
+            width: 75%;
+            margin: auto;
+        }
+        @media (max-width: 1024px) {
+        }
+        h1 {
+            color: white;
+            width: 96%;
+            font-size: 22px;
+            margin-top: 6%;
+            font-family: "Play";
+            @media (max-width: 1284px) {
+                font-size: 22px;
+            }
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+            @media (min-width: 1285px) {
+                width: 80%;
+            }
+        }
+        p {
+            @media (max-width: 1284px) {
+                font-size: 42px;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+            @media (min-width: 1285px) {
+                font-size: 63px;
+            }
+            &:first-of-type {
+                margin-top: -3%;
+            }
+            &:last-of-type {
+                @media (max-width: 1284px) {
+                    font-size: 27px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 15px;
+                }
+                @media (min-width: 1285px) {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
 }

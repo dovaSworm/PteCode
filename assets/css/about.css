@@ -1,19 +1,35 @@
 #about {
-  margin-top: 60px;
+  z-index: 22;
+  position: relative;
+  box-shadow: rgba(74, 104, 219, 0.54) 0px 11px 36px -20px, rgba(74, 111, 219, 0.71) 0px 16px 30px -30px, rgba(74, 151, 219, 0.88) 0px -2px 6px 0px inset;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  margin-top: -4px;
+  background-image: linear-gradient(45deg, rgba(46, 127, 240, 0), rgba(12, 45, 79, 0.12)), url(../img/bek10.gif);
+  color: white;
 }
 @media (max-width: 767px) {
   #about {
-    margin-top: 15%;
-    padding: 0 4%;
+    padding: 0;
   }
 }
 #about h4 {
-  background-color: rgba(9, 5, 43, 0.8117647059);
+  background-color: rgba(9, 5, 43, 0.7417647059);
   padding: 10px;
   margin-bottom: 15px;
   border-bottom: 2px solid #ff0047;
   border-radius: 4px;
   color: white;
+}
+#about .about-screen {
+  box-shadow: rgba(9, 5, 43, 0.61) 0px 2px 4px, rgba(9, 5, 43, 0.5) 0px 7px 13px -3px, rgba(9, 5, 43, 0.42) 0px -3px 0px inset, rgba(9, 5, 43, 0.71) -3px 11px 33px 4px;
+  background: rgba(14, 27, 71, 0.82);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 20px 0;
 }
 
 #about-holder {
@@ -30,7 +46,7 @@
   width: 32.3%;
   border-radius: 2px;
   color: white;
-  background-color: rgba(9, 5, 43, 0.8117647059);
+  background-color: rgba(9, 5, 43, 0.7417647059);
   padding: 15px;
   border-radius: 6px;
 }
@@ -48,36 +64,13 @@
   padding-bottom: 5px;
 }
 
-.about-icon {
-  color: rgb(83, 15, 234);
-  /* color: rgba(32, 40, 51, .85); */
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-@media (max-width: 767px) {
-  .about-icon {
-    margin-top: 0;
-  }
-}
-.about-icon i {
-  margin: 22% 0;
-}
-@media (max-width: 767px) {
-  .about-icon i {
-    margin: 27% 0;
-  }
-}
-
-.about-img-holder {
-  width: 95%;
-}
-.about-img-holder img {
-  width: 100%;
+.about-cotainer {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 
 .team {
-  margin: 15px 0 40px 0;
+  margin: 15px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -94,12 +87,10 @@
   flex-direction: column;
   padding: 10px;
   border-radius: 4px;
-  background-color: rgba(9, 5, 43, 0.8117647059);
 }
 @media (max-width: 767px) {
   .team .team-card {
     width: 100%;
-    margin-bottom: 5px;
   }
   .team .team-card:last-of-type {
     margin-bottom: 0 !important;
@@ -108,11 +99,113 @@
 @media (min-width: 768px) {
   .team .team-card {
     width: 48%;
-    margin-bottom: 15px;
   }
 }
 @media (min-width: 1024px) {
   .team .team-card {
     width: 24%;
   }
+}
+
+.feat-holder {
+  border: 2px solid black;
+  padding: 20px 0;
+  border-radius: 0 0 6px 6px;
+  background-image: linear-gradient(45deg, rgba(6, 12, 32, 0.84), rgba(7, 8, 32, 0.93));
+}
+@media (max-width: 776px) {
+  .feat-holder {
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+@media (max-width: 992px) {
+  .features {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+@media (max-width: 776px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.features h1 {
+  text-align: left;
+}
+.features i {
+  color: rgb(83, 15, 234);
+  text-shadow: 0 0 7px #bdb7ff;
+  text-align: left;
+  border-radius: 50%;
+  width: 50px;
+}
+@media (min-width: 992px) {
+  .features i {
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .features i::before {
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .features i {
+    margin-left: 15%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 320px) {
+  .features i {
+    margin-left: 5%;
+  }
+}
+
+#partneri {
+  padding: 40px 0;
+}
+#partneri p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 5px;
+}
+@media (max-width: 767px) {
+  #partneri p {
+    margin-top: 3px;
+  }
+}
+#partneri img {
+  margin: auto;
+}
+#partneri #carouselExampleIndicators {
+  height: unset;
+}
+#partneri #carouselExampleIndicators img {
+  display: block;
+  margin: auto;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  #partneri #carouselExampleIndicators img {
+    height: 40px;
+  }
+}
+.tech-supp {
+  margin-top: 30px;
+}
+.tech-supp a {
+  margin: auto;
+  color: #275ea3;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=about.css.map */

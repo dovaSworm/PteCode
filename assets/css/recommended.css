@@ -1,26 +1,35 @@
 #carousel-akcija {
-  margin: 3% 0 8% 0;
   box-shadow: rgba(157, 180, 189, 0.45) 0 2px 4px, rgba(149, 189, 238, 0.37) 0 7px 13px -3px, rgba(182, 216, 249, 0.32) 0 -3px 0 inset;
   padding: 6px;
   background: #ebf4fb;
   border-radius: 10px;
 }
+#carousel-akcija a.carousel-control-next,
 #carousel-akcija a.carousel-control-prev {
-  width: auto;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-#carousel-akcija a.carousel-control-next {
-  width: auto;
+#carousel-akcija a.carousel-control-prev {
+  margin-right: 25%;
 }
 #carousel-akcija a.carousel-control-next i,
 #carousel-akcija a.carousel-control-prev i {
   color: black;
-  font-size: 30px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   #carousel-akcija a.carousel-control-next i,
 #carousel-akcija a.carousel-control-prev i {
-    font-size: 25px;
+    font-size: 16px;
   }
+}
+
+.carusel-container {
+  padding: 7px 0;
 }
 
 .rc-holder {
@@ -69,9 +78,42 @@
 }
 
 .fa-bullhorn {
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   color: #ff0047;
 }
 
 .fa-thumbs-up {
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   color: #275ea3;
+}
+
+.fa-list {
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #275ea3;
+}
+
+/* CSS */
+.button-33 {
+  background-color: #c2f0fb;
+  border-radius: 100px;
+  box-shadow: rgba(44, 182, 187, 0.2) 0 -25px 18px -14px inset, rgba(44, 182, 187, 0.15) 0 1px 2px, rgba(44, 182, 175, 0.15) 0 2px 4px, rgba(44, 118, 187, 0.15) 0 4px 8px, rgba(44, 130, 187, 0.15) 0 8px 16px, rgba(44, 118, 187, 0.15) 0 16px 32px;
+  color: rgb(44, 9, 90);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Orbitron";
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 158, 187, 0.35) 0 -25px 18px -14px inset, rgba(44, 134, 187, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 130, 187, 0.25) 0 4px 8px, rgba(44, 134, 187, 0.25) 0 8px 16px, rgba(44, 130, 187, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }/*# sourceMappingURL=recommended.css.map */

@@ -138,7 +138,7 @@
         ?>
         <!-- <h2 class="text-center">Naši proizvodi</h2> -->
         <?php foreach ($products as $product) : ?>
-            <div class="product-card-small backlight">
+            <div class="product-card-small">
                 <div class="d-flex justify-content-between">
                     <h4><b><?php echo $product['title'] ?></b> <?php if ($this->session->userdata('logged_in')) : ?>
                             <b><?php echo "<br>Redni broj proizvoda je: " . $product['rb'] ?></b>
@@ -189,3 +189,4 @@
         </div>
     </div>
 </div>
+

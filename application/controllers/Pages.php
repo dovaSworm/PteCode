@@ -8,7 +8,7 @@
 
             $data['products'] = $this->product_model->get_preporucujemo();
 
-            $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistatik';;
+            $naslov['title'] = 'Pro-Technology electronics sistemi za PCB montažu,lemilice,antistatik';;
             $this->load->view('templates/header', $naslov);
             $this->load->view('pages/' . $page, $data);
             $this->load->view('templates/menu');
@@ -18,7 +18,7 @@
             $this->load->view('templates/footer');
         }
         public function galerija($page = 'galerija') {
-            $naslov['title'] = 'Pro-technology Electronics sistemi za PCB montažu,lemilice,antistatik';;
+            $naslov['title'] = 'Pro-Technology electronics sistemi za PCB montažu,lemilice,antistatik';;
             $this->load->view('templates/header', $naslov);
             $this->load->view('pages/' . $page);
             $this->load->view('templates/about');
